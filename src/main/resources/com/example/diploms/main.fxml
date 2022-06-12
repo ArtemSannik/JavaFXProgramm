@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4fc3f7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diploms.HelloController">
+   <children>
+      <Label layoutX="183.0" layoutY="14.0" text="Сокращение ссылок">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="55.0" text="Ваши сокращенные ссылки">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user_info" focusTraversable="false" layoutX="57.0" layoutY="100.0" prefHeight="25.0" prefWidth="234.0" promptText="Введите сюда свою ссылку" style="-fx-background-radius: 10;" />
+      <TextField fx:id="user_intro" focusTraversable="false" layoutX="57.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" promptText="Введите сюда сокращение для ссылки" style="-fx-background-radius: 10;" />
+      <Button id="enter" fx:id="enter" layoutX="118.0" layoutY="322.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="106.0" style="-fx-background-radius: 10; -fx-background-color: #8bf6ff;" text="Добавить">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane layoutX="329.0" layoutY="88.0" prefHeight="312.0" prefWidth="271.0" style="-fx-background-color: #4fc3f7;">
+         <content>
+            <VBox fx:id="panelVBox" prefHeight="310.0" prefWidth="269.0" style="-fx-background-color: #4fc3f7;" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="label_info" layoutX="54.0" layoutY="257.0" prefHeight="29.0" prefWidth="234.0" style="-fx-background-radius: 10;" textFill="#f50808">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
